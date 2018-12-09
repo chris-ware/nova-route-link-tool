@@ -2,7 +2,6 @@
 
 namespace ChrisWare\NovaRouteLinkTool;
 
-use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
 class NovaRouteLinkTool extends Tool
@@ -22,7 +21,6 @@ class NovaRouteLinkTool extends Tool
         $this->target = $target;
     }
 
-
     /**
      * Perform any tasks that need to happen when the tool is booted.
      *
@@ -41,8 +39,8 @@ class NovaRouteLinkTool extends Tool
     public function renderNavigation()
     {
         return view(self::VIEW_NAME, [
-            'label' => $this->label,
-            'route' => $this->route,
+            'label'  => $this->label,
+            'route'  => $this->route,
             'target' => $this->target,
         ]);
     }
