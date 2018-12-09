@@ -28,7 +28,7 @@ class NovaRouteLinkTool extends Tool
      */
     public function boot()
     {
-
+        //
     }
 
     /**
